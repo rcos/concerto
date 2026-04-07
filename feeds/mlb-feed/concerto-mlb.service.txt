@@ -1,0 +1,13 @@
+[Unit]
+Description=Concerto MLB Feed
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/path/to/python-mlb-feed
+ExecStart=/path/to/python-mlb-feed/start.sh
+Restart=always
+User=YOUR_USERNAME
+
+[Install]
+WantedBy=multi-user.target
